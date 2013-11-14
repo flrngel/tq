@@ -1,0 +1,41 @@
+<div style="margin:0 auto;margin-top:10%;width:400px;">
+	<label>산업기능요원 전역일 계산기</label><hr/>
+	<div class="form-group">
+		<label>대상</label>
+		<div class="radio">
+			<label>
+				<input type="radio" class="bind" name="target" style="text-align:center;" value="34" checked/>
+				현역
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" class="bind" name="target" style="text-align:center;" value="26"/>
+				보충병
+			</label>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="date_start">시작 날짜</label>
+		<input type="text" class="bind dt form-control" id="date_start" style="text-align:center;" disabled/>
+	</div>
+	<div class="form-group">
+		<label for="date_end">종료 날짜</label>
+		<input type="text" class="form-control" id="date_end" style="text-align:center;" readonly/>
+	</div>
+	<div class="form-group">
+		<label>D-Day</label>
+		<input type="text" class="form-control" id="dday" style="text-align:center;" readonly/>
+	</div>
+	<!--
+	<div class="form-group">
+		<label for="date_end">전직 가능 날짜</label>
+		<input type="text" class="form-control" id="date_move" style="text-align:center;" readonly/>
+	</div>
+	<div class="form-group">
+		<label>D-Day</label>
+		<input type="text" class="form-control" id="dday_move" style="text-align:center;" readonly/>
+	</div>
+	-->
+</div>
+<script src="/assets/scripts/index.js" type="text/slowscript"></script>
