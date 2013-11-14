@@ -9,7 +9,7 @@ define(['date'],function(){
 			return formatted;
 		},
 		"calc": function(date,term){
-			var date_end=(new Date(date)).addMonths(parseInt(term));
+			var date_end=(new Date(date)).addMonths(parseInt(term)).addDays(-1);
 			var dday=Math.floor((date_end.getTime()-(new Date()).getTime())/(24*60*60*1000));
 			return {
 				"dday": dday,
